@@ -1,0 +1,11 @@
+source ./cazicthule_prevamp/init.sql
+source ./cazicthule_prevamp/lootdrop_entries.sql
+source ./cazicthule_prevamp/lootdrop.sql
+source ./cazicthule_prevamp/loottable_entries.sql
+source ./cazicthule_prevamp/loottable.sql
+source ./cazicthule_prevamp/npc_faction.sql
+source ./cazicthule_prevamp/npc_types.sql
+source ./cazicthule_prevamp/spawn2.sql
+source ./cazicthule_prevamp/spawnentry.sql
+source ./cazicthule_prevamp/spawngroup.sql
+source ./cazicthule_prevamp/cleanup.sql

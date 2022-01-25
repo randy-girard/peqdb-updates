@@ -1,0 +1,6 @@
+-- Box of abukar global loot
+REPLACE INTO lootdrop_entries (lootdrop_id, item_id, item_charges, equip_item, chance, disabled_chance, trivial_min_level, trivial_max_level, multiplier, npc_min_level, npc_max_level) values ('178225', '11703', '1', '0', '100', '0', '0', '0', '1', '0', '0');
+REPLACE INTO lootdrop (id, name, min_expansion, max_expansion, content_flags, content_flags_disabled) VALUES ('178225', 'Box of Abukar', '-1', '-1', NULL, 'october_1999_temple_era');
+REPLACE INTO loottable_entries (loottable_id, lootdrop_id, multiplier, droplimit, mindrop, probability) VALUE ('110709', '178225', '1', '1', '1', '0.01');
+REPLACE INTO loottable (id, name, mincash, maxcash, avgcoin, done, min_expansion, max_expansion, content_flags, content_flags_disabled) VALUES ('110709', 'Box of Abukar', '0', '0', '0', '0', '-1', '-1', NULL, 'october_1999_temple_era');
+REPLACE INTO global_loot (id, description, loottable_id, enabled, min_level, max_level, rare, raid, race, class, bodytype, zone, hot_zone, min_expansion, max_expansion, content_flags, content_flags_disabled) VALUES ('21', 'Box of Abukar', '110709', '1', '35', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '-1', '-1', NULL, 'october_1999_temple_era');
