@@ -1,0 +1,11 @@
+source ./paw_revamp_1/init.sql
+source ./paw_revamp_1/lootdrop_entries.sql
+source ./paw_revamp_1/lootdrop.sql
+source ./paw_revamp_1/loottable_entries.sql
+source ./paw_revamp_1/loottable.sql
+source ./paw_revamp_1/npc_faction.sql
+source ./paw_revamp_1/npc_types.sql
+source ./paw_revamp_1/spawn2.sql
+source ./paw_revamp_1/spawnentry.sql
+source ./paw_revamp_1/spawngroup.sql
+source ./paw_revamp_1/cleanup.sql
