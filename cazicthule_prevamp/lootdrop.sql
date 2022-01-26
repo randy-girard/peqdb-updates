@@ -1,48 +1,57 @@
-/*
--- Query: select
-ax_classic.lootdrop.id + 200000 as id,
-ax_classic.lootdrop.name
-from ax_classic.npc_types
-left join ax_classic.spawnentry on ax_classic.npc_types.id = ax_classic.spawnentry.npcID
-left join ax_classic.spawngroup ON ax_classic.spawnentry.spawngroupID = ax_classic.spawngroup.id
-left join ax_classic.spawn2 on ax_classic.spawnentry.spawngroupID = ax_classic.spawn2.spawngroupID
-join ax_classic.loottable on ax_classic.npc_types.loottable_id = loottable.id
-join ax_classic.loottable_entries on ax_classic.loottable.id = ax_classic.loottable_entries.loottable_id
-join ax_classic.lootdrop on ax_classic.loottable_entries.lootdrop_id = ax_classic.lootdrop.id
-where ax_classic.npc_types.id >= 48000 and ax_classic.npc_types.id < 49000
-and ax_classic.spawnentry.npcID is not null
-and _condition = 8 and chance > 0
-group by 1
-order by ax_classic.npc_types.id
-
-
--- Date: 2022-01-24 10:46
-*/
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (202305,'577_Radiant_Wear');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (219687,'4922_A_Large_Mosquito_Trade');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (250109,'87464_a_giant_mosquito_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (287405,'Froggy_Quest_Stuff1');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (208861,'2216_An_Alligator_Wear');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (208863,'2216_An_Alligator_Trade');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (287497,'48_Cazic_Gem');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (287556,'cazicthule_2216_an_alligator_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (207601,'1901_A_Tae_Ew_Herald_Wear');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (221883,'5471_A_Lizard_Man_Warrior_Trade');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (288681,'DecayedCT_Armor');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (238767,'9692_A_Lizardman_Watcher_Trade');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (287551,'87605_##a_clay_golem_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (287466,'KerranGorillaStuff');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (287555,'cazicthule_87606_a_gorilla_guard_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (288679,'88090_a_stone_golem_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (287552,'87607_###Tae_Ew_Templer_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (288672,'88084_a_steel_golem_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (287553,'87608_###Tae_Ew_Diviner_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (287550,'87604_####The_Infected_Mosquito_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (287554,'cazicthule_87604_The_Infected_Mosquito2');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (288669,'88082_lizard_champion_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (288664,'88081_#Avatar_of_Fear_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (288665,'88081_#Avatar_of_Fear_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (288666,'88081_#Avatar_of_Fear_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (288667,'88081_#Avatar_of_Fear_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (288670,'88083_cazic_cenobite_');
-INSERT INTO `lootdrop` (`id`,`name`) VALUES (288671,'88083_cazic_cenobite_');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000103, '1898_A_Tae_Ew_Defender_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000104, '150900_a_Tae_Ew_defender_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000105, '150901_a_Tae_Ew_defender_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000003, '1905_A_Tae_Ew_Warder_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000004, '151018_a_Tae_Ew_warder_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000005, '151019_a_Tae_Ew_warder_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000009, '10181_A_Tae_Ew_Probationer_Misc');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000010, '150902_a_Tae_Ew_probationer_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000011, '150903_a_Tae_Ew_probationer_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000012, '1899_A_Tae_Ew_Disciple_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000013, '150911_a_Tae_Ew_disciple_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000014, '150912_a_Tae_Ew_disciple_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000068, '6493_A_Tae_Ew_Page_Misc');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000069, '150907_a_Tae_Ew_page_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000070, '150908_a_Tae_Ew_page_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000034, '150905_a_Tae_Ew_zealot_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000035, '150906_a_Tae_Ew_zealot_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000059, '1901_A_Tae_Ew_Herald_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000060, '150994_a_Tae_Ew_herald_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000061, '150995_a_Tae_Ew_herald_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000036, '90620_a_Tae_Ew_judicator_trade');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000037, '90620_a_Tae_Ew_judicator_wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000038, '90620_a_Tae_Ew_judicator_misc');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000039, '151022_a_Tae_Ew_judicator_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000040, '151023_a_Tae_Ew_judicator_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000031, '889_Thul_Tae_Ew_Cenobite_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000065, '11585_a_Tae_Ew_protector_Trade');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000066, '150898_a_Tae_Ew_protector_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000067, '150899_a_Tae_Ew_protector_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000051, 'Decayed_Armor');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000045, '151059_a_Tae_Ew_crusader_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000046, '151060_a_Tae_Ew_crusader_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000047, '2272_A_Silvered_Tae_Ew_Observer_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000048, '150916_a_silvered_Tae_Ew_observer_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000049, '150917_a_silvered_Tae_Ew_observer_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000050, '11301_a_Tae_Ew_Spiritualist_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000052, '151040_a_Tae_Ew_Spiritualist_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000053, '151041_a_Tae_Ew_Spiritualist_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000054, '577_Radiant_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000076, '1904_A_Tae_Ew_Sentinel_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000077, '1904_A_Tae_Ew_Sentinel_Trade');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000078, '150955_a_Tae_Ew_sentinel_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000079, '150956_a_Tae_Ew_sentinel_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000097, '150932_a_Tae_Ew_fanatic_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000098, '150933_a_Tae_Ew_fanatic_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000080, '557_Tae_Ew_Templar_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000083, '556_Tae_Ew_Diviner_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000084, '887_A_Hulking_Gorilla_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000085, '151028_a_large_gorilla_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000086, '151029_a_large_gorilla_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000087, '555_A_Silverflank_Guardian_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000088, '555_a_Silverflank_guardian_');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000099, '1903_A_Tae_Ew_Justicar_Wear');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000100, '1903_A_Tae_Ew_Justicar_Trade');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000101, '150935_a_Tae_Ew_justicar_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000102, '150936_a_Tae_Ew_justicar_MAGELO-GEN');
+REPLACE INTO `lootdrop` (`id`, `name`) VALUES (1000106, '570_Tae_Ew_Archon_Wear');

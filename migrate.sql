@@ -1,4 +1,4 @@
--- source ./220124050000_add_content_flags_to_lootdrop_entries.sql
+source ./220124050000_add_content_flags_to_lootdrop_entries.sql
 source ./220124065450_content_flags.sql
 source ./220124065451_content_flag_zones.sql
 source ./220124065452_global_loot.sql

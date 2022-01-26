@@ -8,8 +8,8 @@ WHERE NOT EXISTS (
 SET SQL_SAFE_UPDATES = 0;
 
 -- Move the current spawns up in the ID range to import the new ones
-UPDATE npc_types SET id = 200 + id WHERE id >= 18000 AND id < 18200;
-UPDATE spawnentry SET npcID = 200 + npcID WHERE npcID >= 18000 AND npcID < 18200;
+-- UPDATE npc_types SET id = 200 + id WHERE id >= 18000 AND id < 18200;
+-- UPDATE spawnentry SET npcID = 200 + npcID WHERE npcID >= 18000 AND npcID < 18200;
 
 -- Set the revamp content flag to the current paw mobs
 UPDATE
@@ -20,5 +20,5 @@ SET
   peq.spawn2.max_expansion = -1,
   peq.spawn2.content_flags = 'january_2005_paw_revamp'
 WHERE
-    peq.spawnentry.npcID >= 18200 AND peq.spawnentry.npcID < 18400;
+    peq.spawnentry.npcID >= 18000 AND peq.spawnentry.npcID < 18200;
 SET SQL_SAFE_UPDATES = 1;

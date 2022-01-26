@@ -1,60 +1,58 @@
-/*
--- Query: select
-ax_classic.loottable_entries.loottable_id + 200000 as loottable_id,
-ax_classic.loottable_entries.lootdrop_id + 200000 as lootdrop_id,
-ax_classic.loottable_entries.multiplier,
-ax_classic.loottable_entries.probability
-from ax_classic.npc_types
-left join ax_classic.spawnentry on ax_classic.npc_types.id = ax_classic.spawnentry.npcID
-left join ax_classic.spawngroup ON ax_classic.spawnentry.spawngroupID = ax_classic.spawngroup.id
-left join ax_classic.spawn2 on ax_classic.spawnentry.spawngroupID = ax_classic.spawn2.spawngroupID
-join ax_classic.loottable on ax_classic.npc_types.loottable_id = loottable.id
-join ax_classic.loottable_entries on ax_classic.loottable.id = ax_classic.loottable_entries.loottable_id
-join ax_classic.lootdrop on ax_classic.loottable_entries.lootdrop_id = ax_classic.lootdrop.id
-where ax_classic.npc_types.id >= 48000 and ax_classic.npc_types.id < 49000
-and ax_classic.spawnentry.npcID is not null
-and _condition = 8 and chance > 0
-group by 1, 2
-order by ax_classic.npc_types.id
-LIMIT 0, 1000
-
--- Date: 2022-01-24 12:02
-*/
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (200577,202305,1,100);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (200577,207601,1,30);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (200577,287497,1,10);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287464,219687,1,44);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287464,250109,1,22);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287464,287405,1,22);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (202216,208861,1,7);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (202216,208863,1,9);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (202216,287497,1,3);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (202216,287556,1,15);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (205471,207601,1,30);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (205471,221883,1,33);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (205471,288681,1,11);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (209692,238767,1,22);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (209692,287497,1,3);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (209692,288681,1,44);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (209692,207601,1,33);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287605,287551,1,100);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287605,287497,1,10);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287606,287466,1,13);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287606,287497,1,3);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287606,287555,1,8);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (288090,288679,1,100);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287607,207601,1,30);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287607,287552,1,75);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (288084,288672,1,100);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287608,207601,1,30);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287608,287553,1,100);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287604,287550,1,100);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (287604,287554,1,100);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (288082,288669,1,44);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (288081,288664,1,100);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (288081,288665,1,33);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (288081,288666,1,1);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (288081,288667,1,25);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (288081,287497,1,9);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (288083,288670,1,100);
-INSERT INTO `loottable_entries` (`loottable_id`,`lootdrop_id`,`multiplier`,`probability`) VALUES (288083,288671,1,33);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000037, 1000103, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000037, 1000104, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000037, 1000105, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000001, 1000003, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000001, 1000004, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000001, 1000005, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000003, 1000009, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000003, 1000010, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000003, 1000011, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000004, 1000012, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000004, 1000013, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000004, 1000014, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000023, 1000068, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000023, 1000069, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000023, 1000070, 1, 2, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000012, 1000034, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000012, 1000035, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000020, 1000059, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000020, 1000060, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000020, 1000061, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000013, 1000036, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000013, 1000037, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000013, 1000038, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000013, 1000039, 1, 2, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000013, 1000040, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000010, 1000031, 1, 1, 1, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000022, 1000065, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000022, 1000066, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000022, 1000067, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000015, 1000051, 1, 1, 1, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000015, 1000045, 1, 2, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000015, 1000046, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000016, 1000047, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000016, 1000048, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000016, 1000049, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000017, 1000050, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000017, 1000051, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000017, 1000052, 1, 2, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000017, 1000053, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000018, 1000054, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000026, 1000076, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000026, 1000077, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000026, 1000078, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000026, 1000079, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000035, 1000097, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000035, 1000098, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000027, 1000080, 1, 1, 1, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000029, 1000083, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000030, 1000084, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000031, 1000085, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000031, 1000086, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000032, 1000087, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000032, 1000088, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000036, 1000099, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000036, 1000100, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000036, 1000101, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000036, 1000102, 1, 1, 0, 100.0);
+REPLACE INTO `loottable_entries` (`loottable_id`, `lootdrop_id`, `multiplier`, `droplimit`, `mindrop`, `probability`) VALUES (1000038, 1000106, 1, 1, 1, 100.0);

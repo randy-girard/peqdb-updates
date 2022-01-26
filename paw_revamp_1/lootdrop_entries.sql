@@ -1,73 +1,176 @@
-/*
--- Query: select
-ax_classic.lootdrop_entries.lootdrop_id + 300000 as lootdrop_id,
-ax_classic.lootdrop_entries.item_id,
-ax_classic.lootdrop_entries.item_charges,
-ax_classic.lootdrop_entries.equip_item,
-ax_classic.lootdrop_entries.chance
-from ax_classic.npc_types
-left join ax_classic.spawnentry on ax_classic.npc_types.id = ax_classic.spawnentry.npcID
-left join ax_classic.spawngroup ON ax_classic.spawnentry.spawngroupID = ax_classic.spawngroup.id
-left join ax_classic.spawn2 on ax_classic.spawnentry.spawngroupID = ax_classic.spawn2.spawngroupID
-join ax_classic.loottable on ax_classic.npc_types.loottable_id = loottable.id
-join ax_classic.loottable_entries on ax_classic.loottable.id = ax_classic.loottable_entries.loottable_id
-join ax_classic.lootdrop on ax_classic.loottable_entries.lootdrop_id = ax_classic.lootdrop.id
-join ax_classic.lootdrop_entries on ax_classic.lootdrop.id = ax_classic.lootdrop_entries.lootdrop_id
-where ax_classic.npc_types.id >= 18000 and ax_classic.npc_types.id < 19000
-and ax_classic.spawnentry.npcID is not null
-and ax_classic.spawnentry.chance > 0
-group by 1
-order by ax_classic.npc_types.id
-LIMIT 0, 1000
-
--- Date: 2022-01-24 11:57
-*/
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302065,2280,1,1,6);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302067,28022,1,0,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302068,16849,1,0,16);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302073,2280,1,1,10);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302075,3107,1,0,50);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302076,16849,1,0,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302097,2280,1,1,13);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302099,16551,1,0,50);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302093,2280,1,1,10);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302095,16551,1,0,34);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (309119,16551,1,0,50);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (309117,2281,1,1,17);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302081,2280,1,1,13);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302083,16551,1,0,50);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (387498,312,1,0,50);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302089,2280,1,1,11);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302091,16551,1,0,34);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302079,28022,1,0,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302077,2280,1,1,12);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302101,2280,1,1,6);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302103,3107,1,0,50);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302104,16849,1,0,16);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (343249,2280,1,1,15);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (343251,16551,1,0,34);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (343252,22504,1,0,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (307825,5029,1,1,50);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302085,2280,1,1,13);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302087,28022,1,0,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (302088,16849,1,0,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (343253,2281,1,1,50);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (343255,16552,1,0,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (348633,69248,1,1,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (323245,16848,1,1,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (347071,16552,1,0,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (348123,16551,1,0,50);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (347933,7005,1,1,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (347936,13058,1,0,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (322893,13985,1,1,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (311908,8356,1,0,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (347080,16849,1,0,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (300969,6352,1,1,33);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (300970,1357,1,1,50);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (300970,15003,1,0,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (300971,10024,1,0,33);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (300972,14111,1,0,50);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (311909,69248,1,1,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (311912,8357,1,0,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (322321,13500,1,1,100);
-INSERT INTO `lootdrop_entries` (`lootdrop_id`,`item_id`,`item_charges`,`equip_item`,`chance`) VALUES (300973,68233,1,1,100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 2280, 1, 1, 6);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 2281, 1, 1, 6);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 2282, 1, 1, 6);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 2283, 1, 1, 6);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 3107, 1, 1, 6);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 5317, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 5350, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 5353, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 6352, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 7323, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 7351, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 7352, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 14708, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 16848, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120075, 69248, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120076, 28022, 1, 0, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120077, 16849, 1, 0, 16);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120077, 18501, 1, 0, 16);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120077, 18503, 1, 0, 17);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120077, 18505, 1, 0, 17);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120077, 18506, 1, 0, 17);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120077, 18507, 1, 0, 17);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120078, 2280, 1, 1, 10);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120078, 2281, 1, 1, 9);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120078, 2282, 1, 1, 9);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120078, 2283, 1, 1, 9);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120078, 5317, 1, 1, 9);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120078, 5353, 1, 1, 9);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120078, 6352, 1, 1, 9);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120078, 7350, 1, 1, 9);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120078, 14708, 1, 1, 9);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120078, 16848, 1, 1, 9);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120078, 69248, 1, 1, 9);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120079, 3107, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120079, 28022, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120080, 16849, 1, 0, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120141, 2280, 1, 1, 13);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120141, 2281, 1, 1, 13);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120141, 2282, 1, 1, 13);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120141, 2283, 1, 1, 13);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120141, 7352, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120141, 14708, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120141, 16848, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120141, 69248, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120142, 16551, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120142, 28022, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120147, 2280, 1, 1, 10);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120147, 2281, 1, 1, 10);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120147, 2282, 1, 1, 10);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120147, 2283, 1, 1, 10);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120147, 5013, 1, 1, 10);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120147, 6019, 1, 1, 10);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120147, 7352, 1, 1, 10);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120147, 14708, 1, 1, 10);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120147, 16848, 1, 1, 10);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120147, 69248, 1, 1, 10);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120148, 16551, 1, 0, 34);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120148, 16552, 1, 0, 33);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120148, 28022, 1, 0, 33);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120209, 2281, 1, 1, 17);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120209, 3101, 1, 1, 16);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120209, 3108, 1, 1, 16);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120209, 6351, 1, 1, 17);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120209, 16848, 1, 1, 17);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120209, 69248, 1, 1, 17);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120210, 16551, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120210, 16552, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120122, 2280, 1, 1, 15);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120122, 5317, 1, 1, 14);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120122, 6350, 1, 1, 14);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120122, 6351, 1, 1, 14);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120122, 14708, 1, 1, 14);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120122, 16848, 1, 1, 14);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120122, 69248, 1, 1, 15);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120123, 16551, 1, 0, 34);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120123, 16552, 1, 0, 33);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120123, 28022, 1, 0, 33);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120124, 22504, 1, 0, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120207, 2280, 1, 1, 13);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120207, 2281, 1, 1, 13);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120207, 2282, 1, 1, 13);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120207, 2283, 1, 1, 13);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120207, 7352, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120207, 14708, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120207, 16848, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120207, 69248, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120208, 16551, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120208, 16552, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120184, 312, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120184, 3107, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120205, 2280, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120205, 2281, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120205, 2282, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120205, 2283, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120205, 5019, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120205, 5030, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120205, 14708, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120205, 16848, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120205, 69248, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120206, 16551, 1, 0, 34);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120206, 16552, 1, 0, 33);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120206, 28022, 1, 0, 33);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120167, 2280, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120167, 2281, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120167, 2282, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120167, 2283, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120167, 5317, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120167, 7352, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120167, 14708, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120167, 16848, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120167, 69248, 1, 1, 11);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120168, 28022, 1, 0, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 2280, 1, 1, 6);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 2281, 1, 1, 6);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 2282, 1, 1, 6);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 2283, 1, 1, 6);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 5317, 1, 1, 6);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 5352, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 6350, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 6351, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 7323, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 7351, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 7352, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 14708, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 16848, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 30979, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120083, 69248, 1, 1, 7);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120084, 3107, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120084, 28022, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120085, 16849, 1, 0, 16);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120085, 18501, 1, 0, 17);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120085, 18503, 1, 0, 17);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120085, 18505, 1, 0, 17);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120085, 18506, 1, 0, 17);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120085, 18507, 1, 0, 16);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120081, 5029, 1, 1, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120081, 5498, 1, 1, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120164, 2280, 1, 1, 13);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120164, 2281, 1, 1, 13);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120164, 2282, 1, 1, 13);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120164, 2283, 1, 1, 13);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120164, 7352, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120164, 14708, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120164, 16848, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120164, 69248, 1, 1, 12);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120165, 28022, 1, 0, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120166, 16849, 1, 0, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120103, 2281, 1, 1, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120103, 69248, 1, 1, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120104, 16552, 1, 0, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120131, 13500, 1, 1, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120149, 8356, 1, 0, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120171, 69248, 1, 1, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120187, 16848, 1, 1, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120188, 15003, 1, 0, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120189, 16552, 1, 0, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120176, 16849, 1, 0, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120177, 6352, 1, 1, 33);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120177, 7323, 1, 1, 33);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120177, 16848, 1, 1, 34);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120178, 1357, 1, 1, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120178, 15003, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120182, 10024, 1, 0, 33);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120182, 16551, 1, 0, 33);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120182, 97865, 1, 0, 34);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120180, 14111, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120180, 14209, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120183, 68233, 1, 1, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120191, 16551, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120191, 16552, 1, 0, 50);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120201, 7005, 1, 1, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120202, 15003, 1, 0, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120203, 13058, 1, 0, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120204, 13985, 1, 1, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120211, 69248, 1, 1, 100);
+REPLACE INTO `lootdrop_entries` (`lootdrop_id`, `item_id`, `item_charges`, `equip_item`, `chance`) VALUES (120212, 8357, 1, 0, 100);
