@@ -2,5 +2,6 @@
 UPDATE rule_values SET rule_value = '0' WHERE rule_name = 'Expansion:CurrentExpansion';
 UPDATE rule_values SET rule_value = '0' WHERE rule_name = 'World:ExpansionSettings';
 UPDATE rule_values SET rule_value = 'false' WHERE rule_name = 'World:UseClientBasedExpansionSettings';
+UPDATE rule_values SET rule_value = 'false' WHERE rule_name = 'World:EnableTutorialButton';
 
 UPDATE content_flags SET enabled = false;
