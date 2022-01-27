@@ -9,3 +9,4 @@ source ./220124065456_epic_mob_content_flags.sql
 source ./220124075420_fabled.sql
 source ./220124075428_cazic_thule_prevamp.sql
 source ./220124075450_paw_revamp_1.sql
+source ./220124075451_paw_original.sql
