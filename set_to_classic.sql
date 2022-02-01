@@ -41,3 +41,9 @@ UPDATE rule_values SET rule_value = '1' WHERE rule_name = 'World:MaxClientsPerIP
 UPDATE rule_values SET rule_value = '1' WHERE rule_name = 'World:AddMaxClientsPerIP';
 
 UPDATE content_flags SET enabled = false;
+
+-- Accursed Temple of CazicThule
+UPDATE zone SET long_name = 'Lost Temple of Cazic Thule' WHERE short_name = 'cazicthule';
+
+-- Infected Paw
+UPDATE zone SET long_name = 'The Lair of Split Paw' WHERE short_name = 'paw';

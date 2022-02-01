@@ -1,0 +1,12 @@
+truncate npc_types; insert into peq.npc_types select * from peq_base.npc_types;
+truncate spawnentry; insert into peq.spawnentry select * from peq_base.spawnentry;
+truncate spawngroup; insert into peq.spawngroup select * from peq_base.spawngroup;
+truncate spawn2; insert into peq.spawn2 select * from peq_base.spawn2;
+truncate loottable; insert into peq.loottable select * from peq_base.loottable;
+truncate lootdrop; insert into peq.lootdrop select * from peq_base.lootdrop;
+truncate loottable_entries; insert into peq.loottable_entries select * from peq_base.loottable_entries;
+truncate lootdrop_entries; insert into peq.lootdrop_entries select * from peq_base.lootdrop_entries;
+truncate npc_faction; insert into peq.npc_faction select * from peq_base.npc_faction;
+truncate grid; insert into peq.grid select * from peq_base.grid;
+truncate grid_entries; insert into peq.grid_entries select * from peq_base.grid_entries;
+truncate zone; insert into peq.zone select * from peq_base.zone;

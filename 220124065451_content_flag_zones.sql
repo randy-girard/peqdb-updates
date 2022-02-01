@@ -5,3 +5,6 @@ UPDATE zone SET content_flags = 'february_2000' WHERE short_name = 'paineel';
 UPDATE zone SET content_flags = 'october_1999_temple_era' WHERE short_name = 'soltemple';
 UPDATE zone SET content_flags = 'june_2000' WHERE short_name = 'hole';
 UPDATE zone SET content_flags = 'june_2000' WHERE short_name = 'veeshan';
+
+UPDATE zone SET expansion = 3 WHERE short_name = 'jaggedpine';
+UPDATE zone SET expansion = 3 WHERE short_name = 'nedaria';

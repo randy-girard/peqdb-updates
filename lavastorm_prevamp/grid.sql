@@ -1,4 +1,4 @@
-#Lavastorm revamp Kegz @ epicemu.com
+-- Lavastorm revamp Kegz @ epicemu.com
 DELETE FROM grid WHERE zoneid = '27';
 INSERT INTO `grid` VALUES (10, 27, 3, 0);
 INSERT INTO `grid` VALUES (81000, 27, 0, 0);

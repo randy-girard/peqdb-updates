@@ -1,5 +1,5 @@
 
-#Lavastorm revamp Kegz @ epicemu.com
+-- Lavastorm revamp Kegz @ epicemu.com
 DELETE FROM grid_entries WHERE zoneid = '27';
 INSERT INTO `grid_entries` (gridid, zoneid, number, x, y, z, heading, pause) VALUES (81001, 27, 1, 547.921, -914.86, 15.962, -1, 0);
 INSERT INTO `grid_entries` (gridid, zoneid, number, x, y, z, heading, pause) VALUES (81001, 27, 2, -895.932, -598.987, 93.0123, -1, 10);

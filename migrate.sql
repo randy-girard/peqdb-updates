@@ -10,3 +10,5 @@ source ./220124075420_fabled.sql
 source ./220124075428_cazic_thule_prevamp.sql
 source ./220124075450_paw_revamp_1.sql
 source ./220124075451_paw_original.sql
+source ./220124075454_nektulos_classic.sql
+source ./220124075455_lavastorm_classic.sql
